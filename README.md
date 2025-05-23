@@ -44,4 +44,41 @@ A full-stack AI-powered application that automatically generates human-like, con
 git clone https://github.com/vvmmm/Human_like_social_media_reply_generator_using_AI.git
 cd social-media-reply-generator
 
+## 📦 Installation dependencies
+```bash
+pip install -r requirements.txt
 
+## Setup Environment Variables
+
+```bash
+GEMINI_API_KEY=your_gemini_api_key
+MONGO_URI=your_mongodb_connection_string
+
+##🚀 Running the App Locally
+
+###Backend (FastAPI)
+```bash
+uvicorn app.main:app --reload
+
+###Frontend (Streamlit)
+```bash
+streamlit run streamlit_app.py
+
+##🌍 Deployment Guide
+
+###Backend (Render)
+Push your repo to GitHub
+
+Go to Render.com
+
+Create a New Web Service
+
+Connect your GitHub repo
+
+Use the following start command:
+
+bash
+Copy
+Edit
+```bash
+uvicorn app.main:app --host 0.0.0.0 --port 8000
