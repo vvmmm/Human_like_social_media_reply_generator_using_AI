@@ -38,7 +38,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-API_URL = "http://localhost:8000/reply"  # Update if deployed
+API_URL = "https://human-like-social-media-reply-generator-6fmj.onrender.com"  # Update if deployed
 
 st.set_page_config(page_title="Social Media Reply Generator", layout="centered")
 st.title("💬 Human-like Social Media Reply Generator")
