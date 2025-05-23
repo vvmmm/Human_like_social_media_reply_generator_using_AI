@@ -4,4 +4,9 @@ services:
     env: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "uvicorn app.main:app --host 0.0.0.0 --port 8000"
-    plan: free
+    envVars:
+      - key: GEMINI_API_KEY
+        value: "AIzaSyDBplkVfY73oH_ljhx3uB1zzGIezvZW1Gw"
+      - key: MONGO_URL
+        value: "mongodb+srv://Vishal241:Vish24@vishalcluster1.fyq3ael.mongodb.net/"
+
